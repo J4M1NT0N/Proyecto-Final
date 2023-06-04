@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo con Javascript</title>
+    <style>
+        /* Estilos iniciales */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: blue;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .destacado {
+          color: black;
+          font-size: 18px;
+          font-weight: normal;
+          font-family: Arial, sans-serif;
+        }
+        
+        .container {
+          text-align: center;
+          margin-top: 100px;
+        }
+        
+        .boton {
+          margin: 10px;
+          padding: 15px 30px;
+          font-size: 15px;
+          font-weight: bold;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 40px;
+          cursor: pointer;
+          transition-duration: 0.4s;
+        }
+        
+        .boton-estilo1 {
+          background-color: #adaf4c;
+          color: black;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .boton-estilo1:hover {
+          background-color: #30A2FF;
+        }
+        
+        .boton-estilo2 {
+          background-color: #00FFCA;
+          color: rgb(26, 24, 24);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .boton-estilo2:hover {
+          background-color:#30A2FF ;
+        }
+        
+        .boton-estilo3 {
+          background-color: #E57c23;
+          color: rgb(41, 38, 38);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .boton-estilo3:hover {
+          background-color: #30AFF2;
+        }
+        
+        .boton-restablecer {
+          background-color: #FEFF86;
+          color: rgb(58, 53, 53);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .boton-restablecer:hover {
+          background-color: #30A2FF;
+        }
+        
+        .contenido {
+          background-color: white;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 20px;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          transition-duration: 0.3s;
+        }
+        
+        .contenido:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Estilos modificados por los botones */
+        .estilo1 {
+          background-color: #262A56;
+          color: #333333;
+        }
+        
+        .estilo1 .destacado {
+          font-size: 20px;
+          font-weight: bold;
+          color: #ffe600;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .estilo2 {
+          background-color: #ffd700;
+          color: #333333;
+        }
+        
+        .estilo2 .destacado {
+          font-size: 20px;
+          font-weight: normal;
+          color: #EA5455;
+          font-family: 'Times New Roman', serif;
+        }
+        
+        .estilo3 {
+          background-color: #800080;
+          color: #ffffff;
+        }
+        
+        .estilo3 .destacado {
+          font-size: 16px;
+          font-weight: bold;
+          color: #ff9900;
+          font-family: arial;
+        }
+      </style>
+    </head>
+    <body class="">
+      <div class="container">
+        <div class="contenido">
+          <h1 class="destacado">Ingenieria en sistemas</h1>
+          <p class="destacado">
+            La Ingeniería en Sistemas tiene como objetivo formar profesionales capaces de crear tecnología, así como de desempeñar una amplia gama de actividades a nivel de dirección, gerencia y desarrollo, en toda clase de organizaciones locales y multinacionales, en el sector académico, público y privado. Nuestros estudiantes aprenden de profesionales destacados y tienen la oportunidad de practicar en laboratorios especialmente equipados.
+          </p>
+         
+    
+        <br><br>
+    
+        <button class="boton boton-estilo1" onclick="cambiarEstilo('estilo1')">Estilo 1</button>
+        <button class="boton boton-estilo2" onclick="cambiarEstilo('estilo2')">Estilo 2</button>
+        <button class="boton boton-estilo3" onclick="cambiarEstilo('estilo3')">Estilo 3</button>
+        <button class="boton boton-restablecer" onclick="restablecerEstilo()">Restablecer</button>
+      </div>
+    
+      <script>
+        function cambiarEstilo(estilo) {
+          var body = document.body;
+    
+          // Restablecer estilos a los valores iniciales
+          body.classList.remove('estilo1', 'estilo2', 'estilo3');
+    
+          // Aplicar estilos según el botón presionado
+          body.classList.add(estilo);
+        }
+        
+        function restablecerEstilo() {
+          var body = document.body;
+    
+          // Restablecer estilos a los valores iniciales
+          body.classList.remove('estilo1', 'estilo2', 'estilo3');
+        }
+      </script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+    </div></body></html>
