@@ -1,0 +1,80 @@
+html {
+    background-image: url(/images/13687.jpg);
+}
+
+body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+  }
+h2 {
+    background-image: url(/images/imgminim\ \(2\).jpg);
+    color: rgba(243, 243, 233, 0.719);
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 5px;
+    color: rgba(243, 243, 233, 0.719);
+}
+
+#p1 {
+    text-align: center;
+    text-align: justify;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: medium;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(252, 244, 244, 0.253);
+}
+
+#p2 {
+    text-align: center;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: aliceblue;
+}
+
+h3 {
+    color: rgba(240, 255, 255, 0.808);
+    margin: 5px;
+}
+
+#li1 {
+    text-align: center;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: aliceblue;
+}
+
+
+
+#facebook {
+    width: 35px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;    
+}
+
+#instagram {
+    width: 35px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
