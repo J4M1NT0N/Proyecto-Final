@@ -1,0 +1,38 @@
+h2{
+    background-color:chartreuse ;
+    color:black;
+    border: 2px solid rgb(111, 160, 168);
+}
+body {
+    background-color:rgb(201, 221, 221) ;
+}
+h3 {
+    color: rgb(122, 79, 38);
+    background-color: rgb(172, 197, 190);
+    border: 2px solid rgb(95, 117, 95);
+    padding: 2px;
+}
+p { 
+    color: rgb(165, 54, 54); 
+    border: 2px solid rgb(51, 199, 191) ;
+
+}
+h4{
+    background-color: chartreuse ;
+    color: black;
+    border: 2px solid rgb(111, 160, 168)
+    
+} 
+a {
+    color: rgb(44, 102, 156);
+}
+ul {
+    color: darkgreen;
+   
+}
+ol{
+    color: darkred;
+}
+td { 
+    color:rgb(44, 102, 156) ;
+}
